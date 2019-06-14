@@ -1,0 +1,31 @@
+.main{
+	border: 1px solid #ccc;
+	margin: 50px auto;
+	width: 260px;
+	font-family: 'Microsoft YaHei'
+	height: 470px;
+	cursor: pointer;
+}
+.m_title{
+	text-align: left;
+	font-size: 20px;
+	padding: 20px 10px 10px 10px;
+}
+.m_content{
+	color: #11ccaa;
+	padding: 0px 10px 10px 10px;
+}
+.m_img{
+	position: relative;
+	transition: right .3s;
+	background-color: red;
+}
+.m_img img{
+	position: relatives;
+	width: 180px;
+	right: 0px;
+	top: 0px;
+}
+.main:hover img{
+	right: 15px;
+}

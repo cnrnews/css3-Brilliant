@@ -1,0 +1,51 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:'Microsoft YaHei'
+}
+.main{
+	margin:10px auto;
+	width:240px;
+	border:1px solid #ccc;
+	text-align:center
+}
+.main li{
+	list-style: none;
+}
+.m_title{
+	font-size:14px;
+	font-weight:bold;
+	margin:5px;
+}
+.m_content{
+	color:#666;
+	margin-bottom:15px;
+}
+.m_img{
+	position:relative;
+	padding:30px;
+}
+.m_img img{
+	width: 140px;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+.main li:hover  .m_img img{
+-webkit-transform:scale(1.2);
+   -moz-transform:scale(1.2);
+    -ms-transform:scale(1.2);
+        transform:scale(1.2)
+}
+.m_img::before{
+	content:'';
+	position:absolute;
+	width:160px;
+	height:160px;
+	background-color: #eee;
+	-moz-border-radius:50px;
+	border-radius:50%;
+	z-index:-1;
+	left:40px;
+	top:20px;
+}

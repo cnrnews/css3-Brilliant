@@ -1,0 +1,28 @@
+.spinner{
+	width: 60px;
+	height: 60px;
+	position: relative;
+	margin: 100px auto;
+}
+.spinner >div{
+	position: absolute;
+	width: 100%;
+	opacity: 0.6;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #67cf22;
+	left: 0;
+	top: 0;
+	animation: mya 2s infinite ease-in-out
+}
+.spinner >div:nth-child(2){
+	 animation-delay: -1s;
+}
+@keyframes mya{
+	0%,100%{
+		 transform: scale(0.0);
+	}
+	50%{
+		 transform: scale(1.0);
+	}
+}

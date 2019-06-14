@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>结构伪类选择器</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.clearfix{
+			clear: both;
+			overflow: auto;
+		}
+		.demo{
+			border: 1px solid #ccc;
+			width: 300px;
+			height: 300px;
+			margin: 50px auto;
+			padding: 10px;
+
+		}
+		.demo li{
+			float: left;
+			list-style: none;
+			padding: 2px;
+			border: 1px solid #ccc;
+			text-align: center;
+			text-decoration: none;
+			margin-right: 4px;
+			width: 20px;
+			height: 20px;
+		}
+		.demo li:empty{
+			background-color: #0ff;
+		}
+		.demo a{
+			display: block;
+			width: 20px;
+			height: 20px;
+			text-align: center;
+			border-radius: 10px;
+			background-color: #f36;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+   <div class="demo clearfix">
+   	<ul class="clearfix">
+   		<p>aa</p>
+   		<li><a href="">1</a></li>
+   		<li><a href="">2</a></li>
+   		<li><a href="">3</a></li>
+   		<li><a href="">4</a></li>
+   		<li><a href="">5</a></li>
+   		<li><a href="">6</a></li>
+   		<li><a href="">7</a></li>
+   		<li><a href="">8</a></li>
+   		<li><a href="">9</a></li>
+   		<li><a href="">10</a></li>
+   	</ul>
+   	<ul class="clearfix">
+   		<li></li>
+   	</ul>
+   	</ul>
+   </div>		
+</body>
+</html>

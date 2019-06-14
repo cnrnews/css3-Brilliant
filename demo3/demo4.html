@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.hidebtn').click(function(){
+				 var text=$('#title').text();
+				 var html=$('#title').html();
+				 var uname=$('#uname').val();//输入字段的值
+				 console.log(text+":"+html+":"+uname);
+				 var url=$('#url').attr('href');
+				 console.log('url:'+url);
+			})
+		})
+	</script>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: #f0f
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="title">隐藏及设<h1>置回</h1>调函数</div>
+<input type="text" id="uname" name="uname"><br>
+<button class="hidebtn">隐藏</button><br>
+<a href="www.baidu.com" id="url">百度</a><br>
+</body>
+</html>

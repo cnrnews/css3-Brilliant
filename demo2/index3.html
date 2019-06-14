@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>伪元素</title>
+	<style type="text/css">
+		.demo{
+			border: 1px solid #ccc;
+			width: 300px;
+			margin: 50px auto;
+			padding: 10px;
+		}
+		.demo::first-letter{
+			font-size: 30px;
+			font-weight: bold;
+			float: left;
+		}
+		.demo::first-line{
+			color:  #f0f;
+		}
+		.demo01{
+			border: 1px solid #ccc;
+			width: 300px;
+			margin: 10px auto;
+			padding: 10px;
+			text-align: center;
+		}
+		.demo01::before{
+			content:url(./tou.png);
+			display: block;
+		}
+		.demo01::after{
+			content:url(./di.jpg);
+			display: block;
+			text-align: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="demo">
+		在这个世界。真正会疼爱你的。只有你自己。有多疼有多苦只有你自己知道。苦在你自己身。疼在你自己身。别人都是不值得信任的。
+	</div>
+	<div class="demo01">
+		实战CSS
+	</div>
+</body>
+</html>

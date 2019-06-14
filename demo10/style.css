@@ -1,0 +1,27 @@
+ #back_img{
+ 	width: 800px;
+ 	height: 291px;
+ 	margin: 100px auto;
+ 	background-image: url(./view.jpg);
+ 	position: relative;
+ }
+ #content{
+ 	position: absolute;
+	width: 400px;
+	height: 200px;
+	background-color: #fff;
+	padding: 10px;
+	text-align: center;
+	left: 200px;
+	top: 45px;
+	/*//透明度*/
+	opacity: 0.8;
+/*阴影*/
+	-webkit-box-shadow: 3px 3px 5px #888;
+	   -moz-box-shadow:3px 3px 5px #888;
+	        box-shadow: 3px 3px 5px #888;
+	        border-radius:10px;
+
+
+
+ }

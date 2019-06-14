@@ -1,0 +1,51 @@
+#heart{
+width: 100px;
+height: 100px;
+margin:  100px auto;
+/*background-color: yellow;*/
+position: relative;
+}
+#heart::before{
+	content: '';
+	width: 80px;
+	height: 100px;
+	     border-radius: 50px 40px 0 0;
+	background-color: red;
+	position: absolute;
+	-webkit-transform-origin:0 100%;
+	   -moz-transform-origin:0 100%;
+	    -ms-transform-origin:0 100%;
+	      -o-transform-origin:0 100%;
+	        transform-origin:0 100% ;
+	        -webkit-transform:rotate(-50deg);
+	           -moz-transform:rotate(-50deg);
+	            -ms-transform:rotate(-50deg);
+	              -o-transform:rotate(-50deg);
+	                transform:rotate(-50deg) ;
+}
+#heart::after{
+content: '';
+	width: 80px;
+	height: 100px;
+	     border-radius: 50px 40px 0 0;
+	background-color: red;
+	position: absolute;
+ 	-webkit-transform-origin:100% 100%;
+	   -moz-transform-origin:100% 100%;
+	    -ms-transform-origin:100% 100%;
+	      -o-transform-origin:100% 100%;
+	        transform-origin:100% 100% ;
+	        -webkit-transform:rotate(50deg);
+	           -moz-transform:rotate(50deg);
+	            -ms-transform:rotate(50deg);
+	               -o-transform:rotate(50deg);
+	                transform:rotate(50deg) ;
+	                left: -80px;
+	            }
+#egg{
+	width: 126px;
+	height: 180px;
+	background-color: #6ef;
+	margin: 100px auto;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}

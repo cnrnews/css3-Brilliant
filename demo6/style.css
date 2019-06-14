@@ -1,0 +1,31 @@
+#six{
+	width: 45px;
+	height: 0px;
+	border-top: 50px solid red;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	margin: 120px auto;
+	position: relative;
+}
+/*方形*/
+#six::before{
+	content: '';
+	width: 125px;
+	height: 45px;
+	background-color: red;
+	position: absolute;
+	left: -40px;
+	top: -95px;
+}
+/*上边梯形*/
+#six::after{
+	content: '';
+	width: 45px;
+	height: 0px;
+	border-bottom:  50px solid red;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	top: -145px;
+	left: -40px;
+	position: absolute;
+}

@@ -1,0 +1,16 @@
+#ceng{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background-image: repeating-radial-gradient(red 10px,green 30px);
+}
+#lin{
+	width: 300px;
+	height: 300px;
+	 background-image: repeating-linear-gradient(red,yellow 30px,blue)
+	/*background-image: linear-gradient(to right,red,blue,yellow)
+	background-image: linear-gradient(to top,red,blue,yellow)
+	background-image: linear-gradient(to bottom,red,blue,yellow) */
+	/*角度*/
+	/*background-image: linear-gradient(180deg,red 100px,green 120px);*/
+}

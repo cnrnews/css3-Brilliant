@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.hidebtn').click(function(){
+
+				$('div').toggle(1000);
+				// var type=$('.hidebtn').text();
+				// console.log('type='+type);
+				// if(type === '隐藏'){
+				// 	$('.hidebtn').text('显示')
+				// 	$('div').hide(1000,'linear',function(){
+				// 		alert('hide()方法已经完成')
+				// 	})
+				// }else{
+				// 	$('.hidebtn').text('隐藏')
+				// 	$('div').show(1000,'swing',function(){
+				// 		alert('show()方法已经完成')
+				// 	})
+				// }
+			})
+		})
+	</script>
+</head>
+<body>
+
+
+<div>隐藏及设置回调函数</div>
+<button class="hidebtn">隐藏</button>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+#star{
+ width: 0px;
+ height: 0px;
+ border-bottom: 70px solid red;
+ border-left: 100px solid transparent;
+ border-right: 100px solid transparent;
+ transform: rotate(35deg);
+ -webkit-transform:rotate(35deg);
+ -ms-transform: rotate(35deg);
+ -o-transform:rotate(35deg);
+ margin: 180px auto;
+ position: relative;
+}
+/*五角星上边尖角三角形*/
+#star:before{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-bottom: 80px solid red;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	position: absolute;
+	top: -45px;
+	left: -55px;
+	transform: rotate(-35deg);
+}
+/*五角星左侧三角形*/
+#star::after{
+	content: '';
+	width: 0px;
+	height: 0px;
+	border-bottom: 70px solid red;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	transform: rotate(-70deg);
+	 -webkit-transform:rotate(-70deg);
+  -ms-transform: rotate(-70deg);
+   -o-transform:rotate(-70deg);
+	position: absolute;
+	top: 3px;
+	left: -100px
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn1').click(function(){
+				//$('#test1').text('hello world');
+				 $("#test1").text(function(i,origText){
+				      return "旧文本: " + origText + " 新文本: Hello world! (index: " + i + ")"; 
+				    });
+			})
+			$('#btn2').click(function(){
+				//$('#test2').html('<b>hello world</b>');
+				$("#test2").html(function(i,origText){
+			      return "旧 html: " + origText + " 新 html: Hello <b>world!</b> (index: " + i + ")"; 
+			    });
+			})
+			$('#btn3').click(function(){
+				//$('#test3').val('RUNING')
+				$("#runoob").attr({
+			        "href" : "http://www.runoob.com/jquery",
+			        "title" : "jQuery 教程"
+			    });
+			    $('#runoob').html($('#runoob').attr('title'))
+			})
+		})
+	</script>
+</head>
+<body>
+<p id="test1">这是一个段落。</p>
+<p id="test2">这是另外一个段落。</p>
+<p>输入框: <input type="text" id="test3" value="菜鸟教程"></p>
+<a href="" id="runoob" >runoob</a>
+<button id="btn1">设置文本</button>
+<button id="btn2">设置 HTML</button>
+<button id="btn3">设置值</button>
+</body>
+</html>
